@@ -648,6 +648,14 @@ html,
   margin-bottom: 0.75rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -684,12 +692,24 @@ html,
   height: 1px;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
+.max-h-2 {
+  max-height: 0.5rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-\[400px\] {
   width: 400px;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .flex-1 {
@@ -704,6 +724,10 @@ html,
 
 .grid-cols-10 {
   grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -744,8 +768,16 @@ html,
   border-radius: 0.375rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-gray-200 {
@@ -783,6 +815,16 @@ html,
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+.bg-secondary-brand-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 73 247 / var(--tw-bg-opacity));
+}
+
+.bg-primary-brand-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(93 62 188 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
@@ -795,6 +837,10 @@ html,
   padding: 1.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -803,6 +849,21 @@ html,
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -936,6 +997,12 @@ html,
   --tw-gradient-to: transparent;
 }
 
+.after\:bg-secondary-brand-color::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 73 247 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-primary-brand-color:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(93 62 188 / var(--tw-bg-opacity));
@@ -963,6 +1030,11 @@ html,
 .focus\:border-primary-brand-color:focus {
   --tw-border-opacity: 1;
   border-color: rgb(93 62 188 / var(--tw-border-opacity));
+}
+
+.focus\:bg-secondary-brand-color:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 73 247 / var(--tw-bg-opacity));
 }
 
 .focus\:pt-2:focus {
@@ -1001,4 +1073,8 @@ html,
   --tw-text-opacity: 1;
   color: rgb(93 62 188 / var(--tw-text-opacity));
 } 
+
+.campaigns-container {
+  background-image: url(https://cdn.getir.com/getirweb-images/common/illustration/doodle.png);
+}
 
